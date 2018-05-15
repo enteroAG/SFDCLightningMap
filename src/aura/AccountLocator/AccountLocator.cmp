@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable">
+    <aura:attribute name="accountId" type="String"/>
+    <div>
+        <div>
+            <c:AccountMap />
+        </div>
+        <div class="slds-scrollable_y">
+            <c:AccountList accountId="{!v.accountId}"/>
+        </div>
+    </div>
+</aura:component>
