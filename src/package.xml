@@ -12,6 +12,8 @@
         <members>AccountLocatorApp</members>
         <members>AccountLocatorForward</members>
         <members>AccountMap</members>
+        <members>AccountSelected</members>
+        <members>AccountsLoaded</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
