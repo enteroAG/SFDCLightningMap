@@ -6,7 +6,7 @@ public with sharing class AccountController {
                        WHERE Id = :accountId
                        LIMIT 1];
         
-        return [SELECT Id, Name, BillingLatitude, BillingLongitude
+        return [SELECT Id, Name, BillingLatitude, BillingLongitude, BillingCity
                 FROM Account
                 WHERE BillingLatitude!=NULL AND BillingLongitude!=NULL
                 ORDER BY DISTANCE(BillingAddress , :acc.BillingAddress, 'km')
