@@ -1,9 +1,8 @@
 ({
     jsLoaded: function(component, event, helper) {
-        if(map) {
-  			map.remove();
-		}
-        var map = L.map('map', {zoomControl: true, tap: false}).setView([50.256737697601494, 7.648483591683552], 14);
+		// now re-create your map with markers
+		var mapDiv = component.find('mapid').getElement();
+        var map = L.map(mapDiv, {zoomControl: true, tap: false, zoomAnimation:true,fadeAnimation:true,markerZoomAnimation:true}).setView([50.256737697601494, 7.648483591683552], 14);
         L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
             {
                 attribution: 'Tiles © Esri'
