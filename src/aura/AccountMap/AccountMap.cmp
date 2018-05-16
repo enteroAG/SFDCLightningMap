@@ -6,5 +6,5 @@
     <ltng:require styles="/resource/leaflet/leaflet.css"
         scripts="/resource/leaflet/leaflet.js"
         afterScriptsLoaded="{!c.jsLoaded}" />
-    <div id="map"></div>
+    <div aura:id="mapid"></div>
 </aura:component>
